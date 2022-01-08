@@ -9,7 +9,7 @@ if (WIN32)
     set(ASMSource ${sourceFolder}/fx_windows.asm)
 else()
     #enable_language(ASM-ATT)   
-    set(ASMSource ${sourceFolder}/fx_linux.asm)
+    set(ASMSource ${sourceFolder}/fx_linux.s)
 endif(WIN32)
 
 add_executable(${PROJECT_NAME} ${CSource} ${ASMSource})
